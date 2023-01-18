@@ -1,0 +1,201 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: black;
+}
+p{
+    color: white;
+}
+/******** HEADER Starts *******/
+header .heading{
+    left: 12%;
+    top: 0%;
+    position: fixed;
+    width: 88%;
+    height: 100px;
+    background-color: #151515;
+}
+header .heading .searchbar{
+    position: relative;
+    top: 35%;
+    left: 5%;
+}
+header .heading .searchbar img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+header .heading .searchbar input{
+    background-color: #383838;
+    border-radius: 20px;
+    border-color: #383838;
+    border: 1px solid #383838;
+    width: 25%;
+    height: 25px;
+    text-align: center;
+    font-family: fantasy;
+}
+header .heading .headnav{
+    position: absolute;
+    left: 60%;
+    top: 40%;
+    width: 20%;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header .heading .headnav a{
+    text-decoration: none;
+}
+header .heading .headnav img{
+    width: 25px;
+    height: 25px;
+    left: 9%;
+    position: relative;
+}
+.dropbtn {
+    background-color: #151515;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #646464;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 20px;
+}
+  
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 20px;
+}
+.dropdown-content a:hover {background-color: #383838}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #151515;
+}
+/******** HEADER Ends *******/
+
+/******** SIDEBAR Starts *******/
+aside .sidebar{
+    left: 0px;
+    top: 0px;
+    position: fixed;
+    width: 12%;
+    height: 100vh;
+    background-color: #151515;
+}
+aside .sidebar .logo a img{
+    position: absolute;
+    width: 130px;
+    height: 135px;
+
+}
+aside .sidebar .logo a{
+    display: flex;
+    justify-content: center;
+}
+aside .sidebar .logo{
+    margin: auto;
+    width: 100px;
+    height: 150px;
+}
+aside .sidebar .sidenav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+aside .sidebar .sidenav a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    border: 1px solid #383838;
+    border-radius: 10px;
+    background-color: #383838;
+    width: 80%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+
+}
+aside .sidebar .sidenav a > *{
+    width: 50%;
+}
+aside .sidebar .sidenav a img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+aside .sidebar .sidenav a p{
+    color: white;
+    font-family: fantasy;
+    font-size: 20px;
+    margin: 0px;
+}
+aside .sidebar hr{
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+aside .sidebar .sidenav a:hover{
+    background-color: #646464;
+}
+/******** SIDEBAR Ends *******/
+/******** Main section Starts *******/
+section .container{
+    position: absolute;
+    width: 88%;
+    height:85vh;
+    right: 0px;
+    bottom: 0px;
+}
+section .container .image img{
+    position: relative;
+    width: 65%;
+    height: 60vh;
+    left: 18%;
+    top: 10vh;
+}
+section .container .arrows{
+    position: absolute;
+    width: 80%;
+    height: 10vh;
+    left: 10%;
+    top: 40vh;
+    display: flex;
+    justify-content: space-between;
+    
+}
+section .container .arrows img{
+    width:85px;
+    height: 85px;
+    cursor: pointer;
+}
+
+/******** Main section Ends *******/
