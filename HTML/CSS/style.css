@@ -3,7 +3,8 @@ body{
     padding: 0px;
     background: black;
 }
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjord+One&family=Lora&display=swap');
 p{
     color: white;
 }
@@ -60,6 +61,7 @@ header .heading .headnav img{
     height: 25px;
     margin-left: 9%;
     position: relative;
+    cursor: pointer;
 }
 .dropbtn {
     background-color: #151515;
@@ -107,13 +109,14 @@ aside .sidebar{
     top: 0px;
     position: fixed;
     width: 12%;
-    height: 100vh;
+    height: 100%;
     background-color: #151515;
 }
 aside .sidebar .logo a img{
     position: absolute;
-    width: 130px;
-    height: 135px;
+    width: 100px;
+    height: 100px;
+    margin-top: 25%;
 
 }
 aside .sidebar .logo a{
@@ -144,8 +147,9 @@ aside .sidebar .sidenav a{
     width: 80%;
     padding-top: 5px;
     padding-bottom: 5px;
-
-
+}
+aside .sidebar .sidenav a:first-of-type{
+    background-color: #646464;
 }
 aside .sidebar .sidenav a > *{
     width: 50%;
@@ -172,40 +176,132 @@ aside .sidebar .sidenav a:hover{
 /******** SIDEBAR Ends *******/
 /******** Main section Starts *******/
 section .container{
+    display: flex;
     z-index: -1;
     position: absolute;
     width: 88%;
-    height:85vh;
+    height:calc(100vh - 100px);
     right: 0px;
     bottom: 0px;
 }
-section .container .image img{
+section .container .image{
     position: relative;
     width: 65%;
-    height: 60vh;
-    left: 18%;
-    top: 10vh;
+    min-height: 75vh;
+    height: calc(55vh + 6%);
+    margin-top: 3%;
+    margin-left: 5%;
 }
-section .container .arrows{
-    position: absolute;
-    width: 80%;
-    height: 10vh;
-    left: 10%;
-    top: 40vh;
+section .container .image img{
+    width: 100%;
+    height: 65vh;
+    border-radius: 5%;
+}
+section .container .image .text{
+    width: 100%;
+    height: 5vh;
     display: flex;
-    justify-content: space-between;
-    
-}
-section .container .arrows img{
-    width:85px;
-    height: 85px;
-    cursor: pointer;
+    align-items: center;
+    margin-bottom: 6%;
 }
 section .container .image h1{
-    position: relative;
+    position: absolute;
     color: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lora', serif;
     font-size: 30px;
-    text-align: center;
+}
+section .container .image .arrows{
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    top: 35vh;
+    display: flex;
+    justify-content: space-between;  
+}
+section .container .image .arrows img{
+    width:8%;
+    height: 8vh;
+    cursor: pointer;
+}
+section .container .image .arrows img:hover{
+    opacity: 0.75;
+}
+section .container .arrows img:last-of-type{
+        transform: rotate(180deg);
+}
+section .container .sec-images{
+    display: flex;
+    position: relative;
+    width: 28%;
+    height: 65vh;
+    margin-top: 10%;
+    margin-left: 1%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+section .container .sec-images a{
+    display: flex;
+    text-decoration: none;
+    height: 18%;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+section .container .sec-images a > *{
+    margin-left: 20px;
+}
+section .container .sec-images a img{
+    height: 70px;
+    width: 60px;
+}
+section .container .sec-images a:first-of-type{
+    border-radius: 30px;
+    border: 1px solid #383838;
+    background-color: #383838;
+}
+section .container .sec-images a:hover{
+    border-radius: 30px;
+    border: 1px solid #383838;
+    background-color: #383838;
 }
 /******** Main section Ends *******/
+
+@media only screen and (max-width: 951px){
+    aside .sidebar .logo{
+        margin: auto;
+        width: 100px;
+        height: 100px;
+    }
+    aside .sidebar hr{
+        display:none;
+    }
+    aside .sidebar .logo a img{
+        width: 60px;
+        height: 60px;
+    }
+    aside .sidebar .sidenav a p{
+        display: none;
+    }
+    aside .sidebar .sidenav a img{
+        margin: auto;
+    }
+    section .container .image{
+        max-width: 80%;
+    }
+    section .container .arrows{
+        display: flex;
+        justify-content: center;
+        top: 55vh;
+    }
+    section .container .arrows img{
+        border: 1px solid #151515;
+        border-radius: 10px;
+        margin: 10px;
+        background-color: #383838;
+    }
+    section .container .image img{
+        height: 30vh;
+    }
+}
