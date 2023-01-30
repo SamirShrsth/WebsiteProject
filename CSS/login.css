@@ -12,17 +12,22 @@ body{
     height: 100vh;
     display: flex;
     justify-content: center;
-    background-color: rgb(25, 25, 25);
+    background-color: black;
     align-items: center;
+}
+.container img{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    opacity: 0.4;
 }
 .container .login-container{
     width: 430px;
     height: 78vh;
-    background-color: rgb(37, 37, 37);
+    background-color: transparent;
     padding: 10px;
-    border: 1px solid black;
     border-radius: 5px;
-    box-shadow: 0 3px 3px 3px rgba(102, 102, 102, 0.5);
+    z-index: 1;
 }
 .container .login-container .signup-text{
     display: flex;
@@ -45,7 +50,7 @@ body{
     width: 98%;
     height: 42px;
     border-radius: 5px;
-    border: 1px solid #8d949e;
+    border: 1px solid transparent;
     padding-left: 5px;
     font-size: 15px;
     color: white;
@@ -73,7 +78,7 @@ body{
     width: 32%;
     height: 40px;
     border-radius: 5px;
-    border: 1px solid #8d949e;
+    border: 1px solid transparent;
     font-size: 15px;
     font-weight: normal;
     color: white;
@@ -132,10 +137,11 @@ body{
     margin-top: 20px;
 }
 .container .login-container .submit input{
-    background: #0074e4;
+    background: #191919;
     color: #ffffff;
     font-size: 20px;
     font-weight: normal;
+    cursor: pointer;
 }
 .input::placeholder{
     color: #8d949e;

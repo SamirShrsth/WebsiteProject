@@ -1,3 +1,6 @@
+aside .sidebar .sidenav .home{
+    background-color: #383838;
+}
 header .heading .headnav a p{
     color: white;
     font-weight: bold;
@@ -105,13 +108,15 @@ section .container{
     color: white;
 }
 .container footer{
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     left: 12%;
     bottom: 0;
     width: 100%;
-    height: 300px;
-    background-color: black;
+    height: 150px;
+    background-color: rgb(25, 25, 25);
+    font-size: 0.75rem;
     align-items: center;
 }
 .container footer > *{

@@ -148,7 +148,7 @@ aside .sidebar .sidenav a{
     padding-top: 5px;
     padding-bottom: 5px;
 }
-aside .sidebar .sidenav a:first-of-type{
+aside .sidebar .sidenav .home{
     background-color: #646464;
 }
 aside .sidebar .sidenav a > *{
@@ -180,9 +180,9 @@ section .container{
     z-index: -1;
     position: absolute;
     width: 88%;
-    height:calc(100vh - 100px);
-    right: 0px;
-    bottom: 0px;
+    top: 100px;
+    left: 12%;
+    min-height:calc(100vh - 100px);
 }
 /***** Image Sliderr ******/
 #slider{
