@@ -1,6 +1,146 @@
+hr{
+    width: 100%;
+    border: 1px solid white;
+    background-color: white;
+}
+/*******Fonts********/
+section .container .library-container .games-row .feature-game span{
+    font-size: 20px;
+}
+section .container .library-container .games-row span{
+    font-size: 14px;
+}
+section .container .library-container .games-row .buy-buttons input{
+    font-size: 12px;
+}
+/*******Background********/
 aside .sidebar .sidenav .home{
+    background-color: #383838;
+}
+aside .sidebar .sidenav .library{
     background-color: #383838;
 }
 aside .sidebar .sidenav .store{
     background-color: #646464;
+}
+/*******Genre Row********/
+section .container .library-container .genre-row{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+}
+section .container .library-container .genre-row > *{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 19%;
+    border-radius: 15px;
+    background-color: #242424;
+}
+section .container .library-container .genre-row > *:hover{
+    background-color: #363636;
+}
+section .container .library-container .genre-row img{
+    width: 85%;
+    height: 65%;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+}
+section .container .library-container .genre-row span{
+    font-size: 20px;
+    font-weight: bold;
+}
+section .container .library-container .genre-row .launch{
+    display: flex;
+    width: 85%;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+}
+.container .library-container .genre-row .launch input{
+    background-color: #6FC817;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: 1px solid #6FC817;
+    border-radius: 5px;
+    padding: 5px;
+    width: 30%;
+    cursor: pointer;
+}
+section .container .top-library{
+    width: 94%;
+}
+section .container .library-container .top-library{
+    margin-top: 0;
+}
+/*******Main Recommended********/
+section .container .library-container .games-row img{
+    width: 100%;
+    height: 75%;
+}
+section .container .library-container div.games-row ~ div.games-row> *{
+    width: 48%;
+}
+section .container .library-container .games-row .feature-game{
+    width: 100%;
+    justify-content: flex-start;
+}
+section .container .library-container .games-row .feature-game .launch{
+    width: 100%;
+    height: 50px;
+}
+section .container .library-container .games-row .feature-game img{
+    width: 100%;
+    height: 85%;
+}
+section .container .library-container .games-row > *:hover{
+    background-color: transparent;
+}
+.container .library-container .games-row .feature-game .feature-launch{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+}
+/*******General********/
+section .container .library-container .games-row .feature-launch{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.container .library-container .games-row .feature-launch .buy-buttons{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.container .library-container .games-row .feature-launch .buy-buttons input:first-of-type{
+    width: 40%;
+    border: 1px solid white;
+    background-color: transparent;
+}
+.container .library-container .games-row .feature-launch input{
+    background-color: #3864FF;
+    border: 1px solid #3864FF;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 55%;
+    cursor: pointer;
+}
+.container .library-container .games-row .launch input{
+    background-color: #3864FF;
+    border: 1px solid #3864FF;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 55%;
+    cursor: pointer;
 }

@@ -3,6 +3,9 @@ body{
     padding: 0px;
     background: rgb(25, 25, 25);
 }
+*{
+    font-family: 'Open Sans', sans-serif;
+}
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjord+One&family=Lora&display=swap');
 p{
@@ -21,6 +24,7 @@ header .heading .searchbar{
     position: relative;
     top: 35%;
     left: 5%;
+    width: 25%;
 }
 header .heading .searchbar img{
     position: absolute;
@@ -34,10 +38,10 @@ header .heading .searchbar input{
     border-radius: 20px;
     border-color: #383838;
     border: 1px solid #383838;
-    width: 25%;
+    width: 100%;
     height: 25px;
-    text-align: center;
     font-family: fantasy;
+    text-align: center;
 }
 header .heading .headnav{
     position: absolute;
@@ -140,7 +144,6 @@ aside .sidebar .sidenav a{
     align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
-    justify-content: center;
     border: 1px solid #383838;
     border-radius: 10px;
     background-color: #383838;
@@ -206,8 +209,10 @@ section .container{
     justify-content: space-between;
 }
 .container .top-feature h1{
-    font-size: 1.5rem;
+    font-size: 1.rem;
     margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
 }
 .container .top-feature h1:last-of-type{
     opacity: 0.5;
@@ -286,15 +291,32 @@ section .container .sec-images a:hover{
     background-color: #383838;
 }
 /******** Main section Ends *******/
-
 @media only screen and (max-width: 951px){
+    aside .sidebar .sidenav a img{
+        margin-right: 0;
+    }
+    aside .sidebar .sidenav a p{
+        font-size: 10px;
+    }
+    header .heading .searchbar input{
+        font-size: 10px;
+    }
+
+}
+@media only screen and (max-width: 600px){
+    header .heading .searchbar input{
+        display: none;
+    }
+    header .heading .searchbar img{
+        border: 1px solid transparent;
+        padding: 5px;
+        border-radius: 50px;
+        background-color: rgb(56,56,56);
+        cursor: pointer;
+    }
     section .container{
         flex-direction: column;
         align-items: center;
-    }
-    section .container #slider{
-        max-height: 35vh;
-        margin-left: 0px;
     }
     section .container #slider .buttons button{
         height: 5vh;
@@ -321,7 +343,7 @@ section .container .sec-images a:hover{
         display: none;
     }
     aside .sidebar .sidenav a img{
-        margin: auto;
+        margin-right: auto;
     }
     section .container .image{
         max-width: 80%;
@@ -340,5 +362,6 @@ section .container .sec-images a:hover{
     section .container .image img{
         height: 30vh;
     }
+
 
 }

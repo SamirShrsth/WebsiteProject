@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 body{
     color: #D8D8D8;
 }
@@ -13,14 +14,15 @@ section .container{
     align-items: center;
 }
 section .container .top-library{
-    width: 94%;
+    width: 89%;
     margin-top: 2%;
-    height: 10vh;
 }
 section .container .top-library h1{
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-bottom: 10px;
     margin-top: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
 }
 section .container .top-library .sort select{
     background-color: #383838;
@@ -37,7 +39,7 @@ section .container .library-container{
 }
 section .container .library-container .games-row{
     width: 100%;
-    height: 50vh;
+    min-height: 50vh;
     display: flex;
     justify-content: space-between;
 }
