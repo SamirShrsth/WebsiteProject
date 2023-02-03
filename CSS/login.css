@@ -6,6 +6,11 @@ body{
     font-family: 'SF Pro Display', sans-serif;
     
 }
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
 @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
 .container{
     width:100%;
