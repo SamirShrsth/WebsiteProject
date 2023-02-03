@@ -15,10 +15,10 @@ section .container .library-container .games-row .buy-buttons input{
 }
 /*******Background********/
 aside .sidebar .sidenav .home{
-    background-color: #383838;
+    background-color: transparent;
 }
 aside .sidebar .sidenav .library{
-    background-color: #383838;
+    background-color: transparent;
 }
 aside .sidebar .sidenav .store{
     background-color: #646464;
@@ -29,6 +29,7 @@ section .container .library-container .genre-row{
     height: 30vh;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 section .container .library-container .genre-row > *{
     display: flex;
@@ -79,6 +80,9 @@ section .container .library-container .top-library{
     margin-top: 0;
 }
 /*******Main Recommended********/
+section .container .library-container .games-row{
+    display: flex !important;
+}
 section .container .library-container .games-row img{
     width: 100%;
     height: 75%;
@@ -115,7 +119,7 @@ section .container .library-container .games-row .feature-launch{
     justify-content: space-between;
 }
 .container .library-container .games-row .feature-launch .buy-buttons{
-    width: 60%;
+    min-width: 60%;
     display: flex;
     justify-content: space-between;
 }
@@ -143,4 +147,50 @@ section .container .library-container .games-row .feature-launch{
     padding: 5px;
     width: 55%;
     cursor: pointer;
+}
+@media only screen and (max-width: 951px){
+    section .container .library-container .genre-row{
+        height: 65vh;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    section .container .library-container .genre-row > *{
+        width: 32%;
+        margin-top: 5px;
+    }
+    section .container .library-container .genre-row >:nth-last-child(-n+2){
+        width: 49%;
+    }
+    section .container .library-container .games-row{
+        min-height: 30vh;
+    }
+    section .container .library-container .games-row .games-col input{
+        font-size: 10px;
+    }
+    section .container .library-container .games-row .games-col span{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 600px){
+    section .container .library-container div.games-row ~ div.games-row> *{
+        width: 500px;
+    }
+    section .container .library-container .games-row .games-col span{
+        font-size: 10px !important;
+    }
+    .container .library-container .games-row .feature-launch .buy-buttons{
+        min-width: 50%;
+    }
+    .container .library-container .games-row{
+        gap: 20px;
+    }
+    section .container .library-container .genre-row img{
+        height: 60%;
+    }
+    section .container .library-container .genre-row{
+        height: 35vh;
+    }
+    section .container .library-container .genre-row .launch{
+        height: unset;
+    }
 }

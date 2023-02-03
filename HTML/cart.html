@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/WebsiteProject/CSS/style.css">
+    <link rel="stylesheet" href="/WebsiteProject/CSS/library.css">
     <link rel="stylesheet" href="/WebsiteProject/CSS/cart.css">
     <title>Your Games</title>
     <link rel="shortcut icon" href="/WebsiteProject/Images/unigames-high-resolution-logo-color-on-transparent-background (1).png">
@@ -25,6 +26,7 @@
                 <button class="dropbtn">Username</button>
                 <div class="dropdown-content">
                   <a href="#">Settings</a>
+                  <a href="adminlog.html">Log In</a>
                   <a href="login.html">Sign In</a>
                 </div>
             </div>
@@ -65,6 +67,102 @@
 <!-----------Aside Ends----------->
 <!-----------Main Starts----------->
 <section>
-    <div class="container"></div>
+    <div class="container">
+        <div class="top-library">
+            <h1>My Cart</h1>
+            <div class="sort">
+                <span>Sort By:</span>
+                <select name="sort" id="sort">
+                    <option value="name">Recently Added</option>
+                    <option value="date">Most Played</option>
+                    <option value="price">Alphabetical</option>
+                </select>
+            </div>
+        </div>
+        <div class="library-container">
+            
+            <div class="games-row">
+                <div class="cart-image">
+                    <img src="/WebsiteProject/Images/cb.jfif" alt="">
+                </div>
+                <div class="cart-name">
+                    <span><b>Cyberpunk 2077</b></span>
+                    <span>$29.99</span>
+                </div>
+                <div class="cart-remove">
+                    <input type="button" value="Remove From Cart">
+                </div>
+            </div>
+            <div class="games-row">
+                <div class="cart-image">
+                    <img src="/WebsiteProject/Images/minecraft.jpg" alt="">
+                </div>
+                <div class="cart-name">
+                    <span><b>Minecraft</b></span>
+                    <span>$26.99</span>
+                </div>
+                <div class="cart-remove">
+                    <input type="button" value="Remove From Cart">
+                </div>
+            </div>
+            <div class="games-row">
+                <div class="cart-image">
+                    <img src="/WebsiteProject/Images/elden.jpg" alt="">
+                </div>
+                <div class="cart-name">
+                    <span><b>Elden Ring</b></span>
+                    <span>$49.99</span>
+                </div>
+                <div class="cart-remove">
+                    <input type="button" value="Remove From Cart">
+                </div>
+            </div>
+            <div class="games-row">
+                <div class="cart-image">
+                    <img src="/WebsiteProject/Images/gtav.jpg" alt="">
+                </div>
+                <div class="cart-name">
+                    <span><b>Grand Theft Auto V</b></span>
+                    <span>$24.49</span>
+                </div>
+                <div class="cart-remove">
+                    <input type="button" value="Remove From Cart">
+                </div>
+            </div>
+            <div class="games-row">
+                <div class="cart-image">
+                    <img src="/WebsiteProject/Images/fort.jpg" alt="">
+                </div>
+                <div class="cart-name">
+                    <span><b>Fortnite</b></span>
+                    <span>FREE</span>
+                </div>
+                <div class="cart-remove">
+                    <input type="button" value="Remove From Cart">
+                </div>
+            </div>
+            <div class="checkout">
+                <h2>Your Cart Summary</h2>
+                <div class="sumrow">
+                    <span>Price</span>
+                    <span>$131.46</span>
+                </div>
+                <div class="sumrow">
+                    <span>No. of Games</span>
+                    <span>5</span>
+                </div>
+                <div class="sumrow">
+                    <span>Discount</span>
+                    <span>- $24.99</span>
+                </div>
+                <hr>
+                <div class="sumrow">
+                    <span>Total</span>
+                    <span>$106.47</span>
+                </div>
+                <input type="button" value="CHECKOUT">
+            </div>
+        </div>
+    </div>
 </section>
 <!-----------Main Ends----------->

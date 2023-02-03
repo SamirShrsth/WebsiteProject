@@ -21,6 +21,9 @@ body{
     height: 100%;
     opacity: 0.4;
 }
+.container img:last-of-type{
+    display: none;
+}
 .container .login-container{
     width: 430px;
     height: 78vh;
@@ -47,7 +50,7 @@ body{
     justify-content: space-between;
 }
 .container .login-container input{
-    width: 98%;
+    width: 100%;
     height: 42px;
     border-radius: 5px;
     border: 1px solid transparent;
@@ -145,4 +148,12 @@ body{
 }
 .input::placeholder{
     color: #8d949e;
+}
+@media only screen and (max-width:500px){
+    .container > img{
+        display: none;
+    }
+    .container img:last-of-type{
+        display: block;
+    }
 }
